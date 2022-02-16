@@ -262,7 +262,7 @@ function App() {
                   You can still find {CONFIG.NFT_NAME} on
                 </s.TextDescription>
                 <s.SpacerSmall />
-                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                <StyledLink style={{ color: "var(--primary)", textDecoration: "none" }}  target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                   {CONFIG.MARKETPLACE}
                 </StyledLink>
               </>
@@ -278,7 +278,9 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Excluding gas fees. Check collection on <StyledLink  style={{ color: "var(--primary)", textDecoration: "none" }} target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                  {CONFIG.MARKETPLACE}.
+                </StyledLink>
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
