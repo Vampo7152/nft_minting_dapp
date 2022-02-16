@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x3610685E561017aC73d991372D2fbb732098A14E",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x3610685e561017ac73d991372d2fbb732098a14e",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Degen Emoji",
+  "SYMBOL": "DEM",
+  "MAX_SUPPLY": 250,
+  "WEI_COST": 60000000000000000,
+  "DISPLAY_COST": 0.06,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/degenemoji",
+  "SHOW_BACKGROUND": false
+}
