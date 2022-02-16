@@ -239,7 +239,7 @@ function App() {
             <s.TextDescription
               style={{
                 textAlign: "center",
-                color: "var(--primary-text)",
+                color: "var(--primary)",
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
