@@ -276,7 +276,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees. Check collection on <a style={{ cursor: "pointer", textDecoration: "none" }} href="https://testnets.opensea.io/collection/degenemoji" target="_blank">Opensea.</a>
+                  Excluding gas fees. Check collection on <a style={{ cursor: "pointer", textDecoration: "none", color: "var(--primary)" }} href="https://testnets.opensea.io/collection/degenemoji" target="_blank">Opensea.</a>
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
