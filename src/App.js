@@ -145,7 +145,13 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit ${CONFIG.MARKETPLACE_LINK} to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit` + " " +
+          <StyledLink target={"_blank"} style={{
+            color: "var(--primary)",
+          }} href={CONFIG.MARKETPLACE_LINK}>
+                  {CONFIG.MARKETPLACE}
+                </StyledLink>
+                 + " " + `to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -239,10 +245,12 @@ function App() {
             <s.TextDescription
               style={{
                 textAlign: "center",
-                color: "var(--primary)",
+                color: "var(--primary-text)",
               }}
             >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+              <StyledLink style={{
+                color: "var(--primary)",
+              }} target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
@@ -276,7 +284,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees. Check collection on <a style={{ cursor: "pointer", textDecoration: "none", color: "var(--primary)" }} href="https://testnets.opensea.io/collection/degenemoji" target="_blank">Opensea.</a>
+                  Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
