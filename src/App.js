@@ -145,13 +145,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit` + " " +
-          <StyledLink target={"_blank"} style={{
-            color: "var(--primary)",
-          }} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
-                </StyledLink>
-                 + " " + `to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! visit Opensea to view it! 😊`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -374,7 +368,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "MINTING..." : "MINT"}
                       </StyledButton>
                     </s.Container>
                   </>
